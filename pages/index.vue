@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">
+      <h1 class="title text-center">
         OpenCAP address tester
       </h1>
       <query />
-      <div class="footer mt-3">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://github.com/BitDesert/opencap-test">GitHub</a></li>
-          <li class="list-inline-item"><a href="https://github.com/opencap/protocol">OpenCAP protocol</a></li>
-        </ul>
-      </div>
+    </div>
+    <div class="footer mt-3">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://github.com/BitDesert/opencap-test">GitHub</a></li>
+        <li class="list-inline-item"><a href="https://github.com/opencap/protocol">OpenCAP protocol</a></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style>
+/*
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -34,6 +35,7 @@ export default {
   align-items: center;
   text-align: center;
 }
+*/
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,

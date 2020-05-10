@@ -1,18 +1,19 @@
 <template>
   <div>
-    <form v-on:submit.prevent="query">
-      <div class="form-group">
-        <label for="exampleInputEmail1">OpenCAP address</label>
-        <input v-model="address" class="form-control" placeholder="Enter address">
-      </div>
-      <button type="submit" class="btn btn-primary" @click="query">
-        Submit
-      </button>
-    </form>
+    <div class="myquery mb-3">
+      <form v-on:submit.prevent="query">
+        <div class="form-group">
+          <label for="exampleInputEmail1">OpenCAP address</label>
+          <input v-model="address" class="form-control" placeholder="Enter address">
+        </div>
+        <button type="submit" class="btn btn-primary" @click="query">
+          Submit
+        </button>
+      </form>
 
-    <div v-if="message" class="alert alert-primary mt-3" role="alert">{{ message }}</div>
+      <div v-if="message" class="alert alert-primary mt-3" role="alert">{{ message }}</div>
 
-    <p></p>
+    </div>
 
     <div class="row">
       <div v-for="(item, index) in addresses" :key="index" class="col-12">
@@ -62,4 +63,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.myquery {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+</style>
