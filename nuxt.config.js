@@ -28,6 +28,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~plugins/filters.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -60,5 +61,9 @@ module.exports = {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  serverMiddleware: [
+    // API middleware
+    '~/server/api/index.js'
+  ]
 }
