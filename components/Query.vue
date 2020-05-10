@@ -35,6 +35,8 @@ export default {
   // define methods under the `methods` object
   methods: {
     async query () {
+      this.$axios.setBaseURL(window.location.origin)
+
       try {
         const addresses = await this.$axios.$get('/api/query/' + this.address)
         this.addresses = addresses

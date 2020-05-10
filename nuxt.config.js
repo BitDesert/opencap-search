@@ -52,6 +52,12 @@ module.exports = {
   */
   axios: {
   },
+  env: {
+    NODE_ENV: process.env.NODE_ENV,
+    APP_ENV: process.env.APP_ENV,
+    API_URL: process.env.API_URL,
+    APP_VERSION: process.env.APP_VERSION
+  },
   /*
   ** Build configuration
   */
