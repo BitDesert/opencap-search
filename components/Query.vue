@@ -40,6 +40,7 @@ export default {
   methods: {
     async query () {
       this.$axios.setBaseURL(window.location.origin)
+      this.addresses = []
 
       try {
         const addresses = await this.$axios.$get('/api/query/' + this.address)
@@ -50,6 +51,8 @@ export default {
           this.message = error.response.data.error.message
         } else if (error.response.data.code === 'ENOTFOUND') {
           this.message = 'Domain not found'
+        } else if (error.response.data.message) {
+          this.message = error.response.data.message
         } else {
           this.message = error
         }
