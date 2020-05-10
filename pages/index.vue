@@ -5,6 +5,12 @@
         OpenCAP address tester
       </h1>
       <query />
+      <div class="footer mt-3">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://github.com/BitDesert/opencap-test">GitHub</a></li>
+          <li class="list-inline-item"><a href="https://github.com/opencap/protocol">OpenCAP protocol</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

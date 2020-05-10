@@ -5,7 +5,7 @@
         <img v-if="address.extensions.avatar" :src="address.extensions.avatar" class="img-fluid" alt="">
       </div>
       <div class="col">
-        <div class="card-block px-2">
+        <div class="card-block p-2">
           <h4 class="card-title">
             {{ address.address_type | toAddressTypeName }}
           </h4>
